@@ -53,7 +53,7 @@ const submitEventForm = () => {
     console.log(event.value);
     // appboy.logCustomEvent(event.value);
     event.value = '';
-    dataLayer.push({'event': 'logged_event'});
+    // dataLayer.push({'event': 'logged_event'});
 }
 
 const eventButton = document.getElementById("event-button")
