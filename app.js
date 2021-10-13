@@ -20,9 +20,10 @@ switcher.addEventListener('click', function() {
 const submitForm = () => {
     const text = document.getElementById("signup");
     const email = document.getElementById("email");
-    const name = document.getElementById("name");
-    console.log(name.value, email.value)
-    dataLayer.push({"User ID": email.value})
+    // const name = document.getElementById("name");
+    console.log(email.value)
+    email_value = email.value
+    dataLayer.push({"User ID": email_value})
     // appboy.changeUser(email.value)
     // appboy.getUser().setEmail(email.value)
     // appboy.getUser().setFirstName(name.value)
