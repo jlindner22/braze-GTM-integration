@@ -31,7 +31,7 @@ const submitForm = () => {
     console.log("form submitted!")
 }
 
-const formButton = document.getElementById("form-button")
+const formButton = document.getElementById("signup-form-button")
 formButton.addEventListener("click", submitForm);
 
 const submitEventForm = () => {
@@ -65,8 +65,8 @@ attributeButton.addEventListener("click", submitAttributeForm);
 //     appboy.logCustomEvent("prime-for-push")
 // }
 
-const pushPromptButton = document.getElementById("push-prompt-button")
-pushPromptButton.addEventListener("click", submitPushPrompt);
+// const pushPromptButton = document.getElementById("push-prompt-button")
+// pushPromptButton.addEventListener("click", submitPushPrompt);
 
 
 
