@@ -1,7 +1,5 @@
 'use strict';
 
-dataLayer = [];
-
 const switcher = document.querySelector('.btn');
 
 switcher.addEventListener('click', function() {
