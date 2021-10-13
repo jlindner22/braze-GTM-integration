@@ -1,5 +1,7 @@
 'use strict';
 
+dataLayer = [];
+
 const switcher = document.querySelector('.btn');
 
 switcher.addEventListener('click', function() {
@@ -22,7 +24,8 @@ const submitForm = () => {
     const email = document.getElementById("email");
     const name = document.getElementById("name");
     console.log(name.value, email.value)
-    appboy.changeUser(email.value)
+    dataLayer.push({"User ID": email.value})
+    // appboy.changeUser(email.value)
     // appboy.getUser().setEmail(email.value)
     // appboy.getUser().setFirstName(name.value)
     setTimeout(function(){ text.reset() }, 2000)
