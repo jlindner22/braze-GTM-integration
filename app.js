@@ -22,7 +22,8 @@ const submitForm = () => {
     const email = document.getElementById("email");
     // const name = document.getElementById("name");
     // console.log(email.value)
-    email_value = email.value
+    
+    email_value = email.value ? email.value : jen
     dataLayer.push({
         'User ID': email_value,
         'event': 'change-user'
