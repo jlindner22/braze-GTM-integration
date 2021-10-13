@@ -16,28 +16,13 @@ switcher.addEventListener('click', function() {
 
 });
 
-
-const submitForm = () => {
-    const text = document.getElementById("signup");
-    const email = document.getElementById("email");
-    const name = document.getElementById("name");
-    console.log(name.value, email.value)
-    text.textContent = "Form submitted."
-    console.log("form submitted!")
-    setTimeout(function(){ text.reset() }, 2000); //not resetting the form
-}
-
-const button = document.getElementById("form-button")
-button.addEventListener("click", submitForm);
-
-
 //signup form submission
 const submitForm = () => {
     const text = document.getElementById("signup");
     const email = document.getElementById("email");
     const name = document.getElementById("name");
     console.log(name.value, email.value)
-    // appboy.changeUser(email.value)
+    appboy.changeUser(email.value)
     // appboy.getUser().setEmail(email.value)
     // appboy.getUser().setFirstName(name.value)
     setTimeout(function(){ text.reset() }, 2000)
