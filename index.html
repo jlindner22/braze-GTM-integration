@@ -43,18 +43,18 @@
           <div>
               <form id="signup">
                 <h1>Sign Up</h1>
-                <div class="field">
+                <!-- <div class="field">
                   <label for="name">Name:</label>
                   <input type="text" id="name" name="name" placeholder="Enter your full name" value=""/>
                   <small></small>
-                </div>
+                </div> -->
                 <div class="field">
                   <label for="email">Email:</label>
                   <input type="text" id="email" name="email" placeholder="Enter your email address" value="" />
                   <small></small>
                 </div>
                 <div class="field">
-                  <button type="submit" class="full" id="form-button">Sign Up!</button>
+                  <button type="submit" class="full" id="form-button" onclick="dataLayer.push({'event': 'change-user'});">Sign Up!</button>
                 </div>
               </form>
             </div>
@@ -66,7 +66,7 @@
           </div>
           <br>
           <div>
-            <button id= "attribute-button" type="submit"><span>Update</span></button>
+            <button id= "attribute-button" type="submit" onclick="dataLayer.push({'event': 'custom-attribute'});"> <span>Update</span></button>
             <input id="attribute-name" placeholder="Attribute Name" type="text" value="">
             <input id="attribute-value" placeholder="Attribute Value" type="text" value="">
           </div>
